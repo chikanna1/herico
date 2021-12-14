@@ -1,0 +1,35 @@
+.header-container {
+  padding: 20px 50px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-menu {
+    display: flex;
+    align-items: center;
+
+    .header-link {
+      padding: 0 8px;
+      text-decoration: none;
+      font-family: "Vollkorn SC", serif;
+      color: black;
+      font-weight: 700;
+      font-size: large;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .logo {
+    img {
+      height: 40px;
+      margin-right: 50px;
+    }
+  }
+
+  .search-input {
+    width: 300px;
+  }
+}

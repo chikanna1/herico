@@ -1,0 +1,57 @@
+.homepage-reviews-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(146, 1, 1, 0.911);
+  width: 100vw;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 100px;
+
+  .title-text {
+    font-size: 15px;
+    position: absolute;
+    margin-bottom: 200px;
+    font-family: "Vollkorn SC", serif;
+    font-weight: bolder;
+  }
+
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    .review-text {
+      font-size: 30px;
+      text-align: center;
+      padding: 50px 30px;
+      font-style: italic;
+    }
+
+    .stars {
+    }
+
+    .reviewer-text {
+      font-family: "Mate", serif;
+      font-weight: bolder;
+      padding-top: 20px;
+    }
+  }
+  .buttons {
+    position: absolute;
+    margin-top: 300px;
+
+    .fontawesome-icon {
+      padding: 3px;
+
+      &.is-active {
+        outline: black 2px solid;
+        border-radius: 50%;
+      }
+    }
+  }
+}

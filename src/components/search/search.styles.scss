@@ -1,0 +1,13 @@
+.search-container {
+  .search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+}
