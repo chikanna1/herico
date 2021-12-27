@@ -1,0 +1,62 @@
+.footer-container {
+  width: 100vw;
+  height: 50vh;
+  padding: 50px 0;
+  font-family: "Vollkorn SC", serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .left-side {
+    display: flex;
+    flex-direction: row;
+    .menu-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      width: 300px;
+
+      .menu-title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: larger;
+      }
+
+      .footer-link {
+        text-decoration: none;
+        padding: 5px 0;
+        color: black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .right-side {
+    .email-input {
+      .sign-up-form {
+        display: flex;
+        flex-direction: row;
+
+        .submit {
+          display: inline;
+          align-self: flex-end;
+          margin-bottom: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .social-media-links {
+      .social-media-icon {
+        margin: 15px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  overflow: hidden;
+}
