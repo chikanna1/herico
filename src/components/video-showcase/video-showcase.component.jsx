@@ -9,7 +9,7 @@ const VideoShowcase = () => (
     <ReactPlayer
       className="video"
       width="100%"
-      height="100%"
+      height="125%"
       url={url}
       controls={false}
       muted={true}
