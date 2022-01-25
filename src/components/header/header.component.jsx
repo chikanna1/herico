@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import mainLogo from "./assets/logo.png";
 import SearchBox from "../search/search.component";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase/firebase.utils";
 
 class Header extends React.Component {
   constructor(props) {
@@ -34,7 +35,9 @@ class Header extends React.Component {
         </div>
 
         <div className="logo">
-          <img className="mainLogo" src={mainLogo} alt="HERICO" />
+          <Link className="header-link" to="/">
+            <img className="mainLogo" src={mainLogo} alt="HERICO" />
+          </Link>
         </div>
 
         <div className="right-menu">
@@ -43,12 +46,28 @@ class Header extends React.Component {
             <Link className="header-link" to="about">
               ABOUT
             </Link>
-            <Link className="header-link" to="seasons-deals">
-              ACCOUNT
-            </Link>
+            {this.props.currentUser ? (
+              <Link className="header-link" to="my-account">
+                ACCOUNT
+              </Link>
+            ) : (
+              <Link className="header-link" to="sign-in">
+                SIGN IN
+              </Link>
+            )}
             <Link className="header-link" to="article-of-month">
               REFER A FRIEND
             </Link>
+            {this.props.currentUser ? (
+              <FontAwesomeIcon
+                className="sign-in-sign-out-button"
+                icon={["fas", "sign-out-alt"]}
+                size="2x"
+                onClick={() => auth.signOut()}
+              />
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>
