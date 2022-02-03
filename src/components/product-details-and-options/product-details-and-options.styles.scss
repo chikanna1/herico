@@ -1,0 +1,83 @@
+.product-page-details-and-options-container {
+  width: 40vw;
+  font-family: "Vollkorn SC", serif;
+
+  .product-details {
+    .product-category-title {
+      font-size: 20px;
+      padding: 5px 0;
+      color: rgba(0, 0, 0, 0.9);
+    }
+    .product-name {
+      font-size: 30px;
+      padding: 5px 0;
+    }
+    .product-price {
+      font-size: 30px;
+      padding: 5px 0;
+    }
+  }
+  .product-options {
+    .product-color-options {
+      display: flex;
+      padding: 10px 0;
+      margin-top: 40px;
+      flex-direction: row;
+      align-items: center;
+      .product-color-title {
+        font-size: 18px;
+      }
+
+      .product-color {
+        font-weight: bolder;
+        padding: 0 5px;
+        font-size: 20px;
+      }
+    }
+
+    .quantity-and-add-to-cart-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .quantity-picker {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: black 1.5px solid;
+        width: 175px;
+        padding: 10px 5px;
+
+        .quantity-picker-sign {
+          margin: 0 20px;
+          cursor: pointer;
+        }
+
+        .quantity {
+          font-size: 25px;
+        }
+      }
+
+      .add-to-cart-or-wishlist-buttons {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        align-items: center;
+
+        .wishlist-button {
+          margin: 0 5px;
+          cursor: pointer;
+          color: crimson;
+
+          :hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    margin: 50px 0;
+  }
+}

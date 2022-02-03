@@ -1,0 +1,16 @@
+.product-page-container {
+  background: rgba(0, 0, 0, 0.041);
+  padding: 100px;
+  .product-image-and-buy-option-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .product-page-left-side {
+      width: 60%;
+    }
+    .product-page-right-side {
+      width: 40%;
+    }
+  }
+}

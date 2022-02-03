@@ -5,6 +5,9 @@ import mainLogo from "./assets/logo.png";
 import SearchBox from "../search/search.component";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
+import { connect } from "react-redux";
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
 class Header extends React.Component {
   constructor(props) {
@@ -58,20 +61,18 @@ class Header extends React.Component {
             <Link className="header-link" to="article-of-month">
               REFER A FRIEND
             </Link>
-            {this.props.currentUser ? (
-              <FontAwesomeIcon
-                className="sign-in-sign-out-button"
-                icon={["fas", "sign-out-alt"]}
-                size="2x"
-                onClick={() => auth.signOut()}
-              />
-            ) : (
-              <div></div>
-            )}
+
+            <CartIcon />
           </div>
+          {this.props.hidden ? null : <CartDropdown />}
         </div>
       </div>
     );
   }
 }
-export default Header;
+
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+  hidden: state.cart.hidden,
+});
+export default connect(mapStateToProps)(Header);

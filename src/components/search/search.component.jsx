@@ -18,7 +18,7 @@ class SearchBox extends React.Component {
   render() {
     return (
       <div className="search-container">
-        <button type="submit" class="search-button">
+        <button type="submit" className="search-button">
           <img src={searchglass} alt="Search" />
         </button>
       </div>
