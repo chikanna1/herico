@@ -16,7 +16,6 @@ const HomePage = () => (
     <HomepageReviews />
     <WhyHerico />
     <JewelryShowcase />
-    <Footer />
   </div>
 );
 

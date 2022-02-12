@@ -39,15 +39,18 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 40px;
 
       .quantity-picker {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border: black 1.5px solid;
+        border: rgb(255, 255, 255) 1.5px solid;
+        box-shadow: 5px rgb(255, 255, 255);
         width: 175px;
         padding: 10px 5px;
+        background-color: white;
 
         .quantity-picker-sign {
           margin: 0 20px;
@@ -66,7 +69,7 @@
         align-items: center;
 
         .wishlist-button {
-          margin: 0 5px;
+          margin: 0 20px;
           cursor: pointer;
           color: crimson;
 

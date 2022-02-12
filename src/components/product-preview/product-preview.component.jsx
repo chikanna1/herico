@@ -2,8 +2,8 @@ import React from "react";
 import "./product-preview.styles.scss";
 import HoverImage from "react-hover-image";
 
-const ProductPreview = ({ item }) => (
-  <div className="product-preview-container">
+const ProductPreview = ({ item, size }) => (
+  <div className={`product-preview-container ${size}`}>
     <div className="product-image-container">
       <HoverImage
         src={item.coverImage1Url}

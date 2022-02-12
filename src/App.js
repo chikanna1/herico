@@ -11,6 +11,7 @@ import AccountPage from "./pages/account-page/account-page.page";
 
 import Header from "./components/header/header.component";
 import Banner from "./components/banner/banner.component";
+import Footer from "./components/footer/footer.component";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -73,6 +74,7 @@ class App extends React.Component {
             element={<ProductPage item={SHOP_DATA[0]} />}
           />
         </Routes>
+        <Footer />
       </div>
     );
   }

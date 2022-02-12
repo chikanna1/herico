@@ -42,8 +42,8 @@ class ProductImage extends React.Component {
               height: 1800,
             },
             enlargedImageContainerDimensions: {
-              width: "190%",
-              height: "100%",
+              width: "110%",
+              height: "110%",
             },
           }}
         />

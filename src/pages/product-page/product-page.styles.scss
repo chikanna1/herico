@@ -1,7 +1,12 @@
 .product-page-container {
-  background: rgba(0, 0, 0, 0.041);
-  padding: 100px;
+  background: rgba(121, 121, 121, 0.35);
+  overflow-x: hidden;
+
   .product-image-and-buy-option-container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;

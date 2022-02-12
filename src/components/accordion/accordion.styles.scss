@@ -1,8 +1,12 @@
 .accordion {
   font-size: 15px;
+  font-family: "Vollkorn SC", serif;
+  cursor: pointer;
 }
 
 .accordion__button {
+  font-family: "Vollkorn SC", serif;
+
   border: 0;
   margin: 10px 0;
   padding: 20px;
@@ -11,6 +15,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: inherit;
+  background: transparent;
+  border-bottom: black 1px solid;
+  // border-top: black 1px solid;
 }
 
 .accordion__button span {
@@ -20,9 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: rgb(0, 0, 0);
   // background: #000;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .accordion__button:focus {
@@ -41,6 +48,8 @@
 }
 
 .accordion__content.active {
+  transition: all 0.5s;
+
   height: auto;
   opacity: 1;
   padding: 20px;
