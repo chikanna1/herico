@@ -1,13 +1,13 @@
 import React from "react";
 
 import "./sign-in-and-sign-up.styles.scss";
-import SignIn from "../../components/sign-in/sign-in.component";
-import SignUp from "../../components/sign-up/sign-up.component";
+import SignInForm from "../../components/sign-in-form/sign-in-form.component";
+import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
 
 const SignInAndSignUpPage = () => (
   <div className="sign-in-and-sign-up">
-    <SignIn />
-    <SignUp />
+    <SignInForm />
+    <SignUpForm />
   </div>
 );
 

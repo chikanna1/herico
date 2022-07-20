@@ -32,7 +32,7 @@ class ProductImage extends React.Component {
             smallImage: {
               alt: "Wristwatch by Ted Baker London",
               isFluidWidth: false,
-              width: 700,
+              width: 650,
               height: 600,
               src: smallImage,
             },

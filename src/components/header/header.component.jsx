@@ -4,26 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import mainLogo from "./assets/logo.png";
 import SearchBox from "../search/search.component";
 import { Link } from "react-router-dom";
-import { auth } from "../../firebase/firebase.utils";
-import { connect } from "react-redux";
+import { auth, signOutUser } from "../../firebase/firebase.utils";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+import { UserContext } from "../../contexts/user.context";
+import { CartContext } from "../../contexts/cart.context";
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
+import { Fragment, useContext } from "react";
 
-    this.state = {
-      searchText: "",
-    };
-  }
+const Header = () => {
+  const { currentUser } = useContext(UserContext);
+  const { isCartOpen } = useContext(CartContext);
 
-  handleChange = (event) => {
-    const searchTerm = event.target;
-    this.setState({ searchText: searchTerm });
-  };
-  render() {
-    return (
+  return (
+    <Fragment>
       <div className="header-container">
         <div className="header-menu left">
           <Link className="header-link" to="shop">
@@ -49,30 +43,27 @@ class Header extends React.Component {
             <Link className="header-link" to="about">
               ABOUT
             </Link>
-            {this.props.currentUser ? (
-              <Link className="header-link" to="my-account">
-                ACCOUNT
-              </Link>
+
+            {currentUser ? (
+              <span className="header-link" onClick={signOutUser}>
+                SIGN OUT
+              </span>
             ) : (
               <Link className="header-link" to="sign-in">
                 SIGN IN
               </Link>
             )}
+
             <Link className="header-link" to="article-of-month">
               REFER A FRIEND
             </Link>
-
             <CartIcon />
           </div>
-          {this.props.hidden ? null : <CartDropdown />}
+          {isCartOpen && <CartDropdown />}
         </div>
       </div>
-    );
-  }
-}
+    </Fragment>
+  );
+};
 
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
-  hidden: state.cart.hidden,
-});
-export default connect(mapStateToProps)(Header);
+export default Header;

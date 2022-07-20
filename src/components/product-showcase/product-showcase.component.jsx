@@ -4,10 +4,11 @@ import "./product-showcase.styles.scss";
 import ProductPreview from "../product-preview/product-preview.component";
 import SHOP_DATA from "../../assets/shop_data";
 
-const item1 = SHOP_DATA[0];
-const item2 = SHOP_DATA[1];
-const item3 = SHOP_DATA[2];
-const item4 = SHOP_DATA[3];
+const item1 = SHOP_DATA[0].products[0];
+const item2 = SHOP_DATA[0].products[1];
+const item3 = SHOP_DATA[0].products[2];
+const item4 = SHOP_DATA[0].products[3];
+
 const ProductShowcase = () => (
   <div className="product-showcase-container">
     <div className="product-showcase-header">

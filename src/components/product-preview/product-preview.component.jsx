@@ -1,6 +1,7 @@
 import React from "react";
 import "./product-preview.styles.scss";
 import HoverImage from "react-hover-image";
+import { Link } from "react-router-dom";
 
 const ProductPreview = ({ item, size }) => (
   <div className={`product-preview-container ${size}`}>

@@ -3,15 +3,10 @@ import "./preview-collection.styles.scss";
 
 import ProductPreview from "../product-preview/product-preview.component";
 
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ category, items }) => (
   <div className="collection-preview">
-    <h1 className="title">{title.toUpperCase()}</h1>
     <div className="preview">
-      {items
-        .filter((item, idx) => idx < 4)
-        .map(({ ...productProps }) => (
-          <ProductPreview {...productProps} />
-        ))}
+      <h1>{category.toUpperCase()}</h1>
     </div>
   </div>
 );

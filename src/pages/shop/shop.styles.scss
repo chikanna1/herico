@@ -1,0 +1,90 @@
+.shop-page {
+  width: 100vw;
+  height: auto;
+  font-family: "Vollkorn SC", serif;
+
+  .shop-page-filters {
+    height: 300px;
+    padding: 50px 75px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgba(67, 58, 54, 1);
+
+    .filters-title-text {
+      .filters-title {
+        font-size: 1.2rem;
+        padding: 10px 0;
+      }
+      .filters-subtitle {
+        font-size: 3.2rem;
+      }
+    }
+
+    .filters {
+      padding: 50px 0px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+
+      .filter-menu {
+        width: 200px;
+        box-shadow: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-align: left;
+
+        .rc-menu-submenu.rc-menu-submenu-inline.submenu {
+          background-color: rgba(67, 58, 54, 0.9);
+
+          :hover {
+            background-color: rgba(67, 58, 54, 0.9);
+          }
+        }
+
+        .submenu {
+          background-color: rgba(67, 58, 54, 0.9);
+
+          .menu-item {
+            background-color: white;
+            border: 1px black dotted;
+
+            :hover {
+              background-color: rgba(67, 58, 54, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .shop-page-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+    h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+      text-shadow: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      text-transform: capitalize;
+      padding: 20px 0;
+    }
+  }
+
+  .shop-section {
+    .product-preview-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
