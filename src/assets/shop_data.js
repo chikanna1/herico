@@ -6,6 +6,8 @@ const SHOP_DATA = [
         id: 1,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -22,6 +24,8 @@ const SHOP_DATA = [
         id: 2,
         productName: "Menala Bracelet",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -38,6 +42,8 @@ const SHOP_DATA = [
         id: 3,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -54,6 +60,8 @@ const SHOP_DATA = [
         id: 4,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -70,6 +78,8 @@ const SHOP_DATA = [
         id: 5,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -91,6 +101,8 @@ const SHOP_DATA = [
         id: 6,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -107,6 +119,8 @@ const SHOP_DATA = [
         id: 7,
         productName: "Menala Bracelet",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -123,6 +137,8 @@ const SHOP_DATA = [
         id: 8,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -139,6 +155,8 @@ const SHOP_DATA = [
         id: 9,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:
@@ -155,6 +173,8 @@ const SHOP_DATA = [
         id: 10,
         productName: "Menala Necklace",
         productPrice: 320.0,
+        stripePrice: "",
+        stripeProduct: "",
         coverImage1Url:
           "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg",
         secondaryImageUrl:

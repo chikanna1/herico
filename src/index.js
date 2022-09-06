@@ -3,10 +3,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import "@stripe/stripe-js";
 
 import { UserProvider } from "./contexts/user.context";
 import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
+import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
 
 ReactDOM.render(
   <BrowserRouter basename="/">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes, Navigate, useParams, Router } from "react-router-dom";
-
-import "./App.css";
+import "@stripe/stripe-js";
+import "./App.scss";
 
 import HomePage from "./pages/homepage/homepage.page";
 import ShopPage from "./pages/shop/shop.page";

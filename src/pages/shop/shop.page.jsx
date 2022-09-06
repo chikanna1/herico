@@ -10,6 +10,8 @@ import ProductPage from "../../pages/product-page/product-page.page";
 import Menu, { SubMenu, Item as MenuItem } from "rc-menu";
 import "rc-menu/assets/index.css";
 
+let stripeProducts = [];
+
 const ShopPage = () => {
   const { categoriesMap } = useContext(CategoriesContext);
   console.log(categoriesMap);
@@ -245,7 +247,7 @@ const ShopPage = () => {
                 </div>
               ))}
             </div>
-            ))}
+            ))
           </Fragment>
         </div>
       </div>
